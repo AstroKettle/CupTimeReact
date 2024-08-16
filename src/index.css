@@ -79,6 +79,10 @@ img {
   gap: 50px;
 }
 
+.header__menu-link.active {
+  color: #64099b;
+}
+
 .header__cart-link {
   width: 28px;
   height: 28px;
@@ -424,9 +428,83 @@ input[type="number"] {
   margin-bottom: 100px;
 }
 
-.order__radio {}
+.modal__container {
+  display: flex;
+  grid-template-areas:
+    "image info"
+    "image button";
+  width: 744px;
+  max-height: 360px;
+  border-radius: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f2f9f7;
+}
 
-.order__payment-label {}
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: inherit;
+  gap: 51.5px;
+  width: 100%;
+}
+
+.modal__image {
+  grid-area: image;
+  width: 100%;
+  max-width: 336px;
+  height: fit-content;
+  object-fit: cover;
+}
+
+.modal__title-price {
+  margin: 0 16px;
+
+}
+
+.modal__title {
+  font-size: 24px;
+}
+
+.modal__info {
+  grid-area: info;
+  
+  
+  margin-left: 16px;
+  padding-right: 16px;
+  font-size: 16px;
+}
+
+.modal__info p {
+  margin: 0 0;
+}
+
+.modal__info li {
+  
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal__button {
+  grid-area: button;
+  border: 1px solid #64099b;
+  border-radius: 4px;
+  padding: 16px 24px;
+  width: 143px;
+  height: 54px;
+  background: transparent;
+  color: #64099b;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+.ReactModal__Content {
+  transform: translate(0, 50%);
+  overflow: hidden;
+}
 
 @media (max-width: 1240px) {
   .container {
@@ -563,7 +641,7 @@ input[type="number"] {
     align-items: center;
     padding: 24px;
     border-radius: 6px;
-height: 78px;
+    height: 78px;
   }
 
   .cart__summary-title {
@@ -779,5 +857,20 @@ height: 78px;
   .footer__social {
     display: flex;
     gap: 12px;
+  }
+
+  .modal__container {
+    display: grid;
+    grid-template-areas:
+      "image"
+      "info" 
+      "button";
+    width: 290px;
+    max-height: 1000px;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #f2f9f7;
+    transform: translate(0, 25%);
   }
 }
