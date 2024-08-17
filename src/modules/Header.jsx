@@ -5,8 +5,8 @@ export const Header = () => {
     const location = useLocation();
     const {cart} = useCart();
     const getActiveClass = (category) => {
-        const currentCategory = new URLSearchParams(Location.search).get('category');
-
+        const currentCategory = new URLSearchParams(location.search).get('category');
+        console.log(currentCategory);
         return currentCategory === category ? "active" : "";
     }
     return (
