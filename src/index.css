@@ -705,7 +705,9 @@ input[type="number"] {
     object-fit: cover; защита от искажения при сжатии
   }
   */
-
+  .products_title {
+    font-size: 40px;
+  }
   .product__title {
     font-size: 20px;
   }
@@ -730,6 +732,10 @@ input[type="number"] {
   .footer__email {
     font-size: 16px;
     margin-bottom: 12px;
+  }
+
+  .footer__developers {
+    font-size: 12px;
   }
 
   .cart__container {
@@ -854,6 +860,7 @@ input[type="number"] {
   .modal__container {
     max-width: 524px;
     height: 260px;
+    transform: translateY(20%);
   }
 
   .modal__content {
@@ -1043,7 +1050,7 @@ input[type="number"] {
     padding: 60px 0;
   }
 
-  .products__title {
+  .products_title {
     font-size: 36px;
   }
 
@@ -1126,7 +1133,7 @@ input[type="number"] {
     height: fit-content;
     border-radius: 6px;
     background: #f2f9f7;
-    transform: translateY(50%);
+    transform: translateY(10%);
   }
 
   .modal__image {

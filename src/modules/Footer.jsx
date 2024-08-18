@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const Footer = () => (
     <footer className="footer">
         <div className="container footer__container">
@@ -8,15 +10,15 @@ export const Footer = () => (
             <div className="footer_nav">
                 <ul className="footer__menu">
                     <li className="footer__menu-item">
-                        <a href="#" className="footer__menu-link">Чай</a></li>
+                        <Link to="/products?category=tea" className="footer__menu-link">Чай</Link></li>
                     <li className="footer__menu-item">
-                        <a href="#" className="footer__menu-link">Кофе</a></li>
+                        <Link to="/products?category=coffee" className="footer__menu-link">Кофе</Link></li>
                     <li className="footer__menu-item">
-                        <a href="#" className="footer__menu-link">Чайники</a></li>
+                        <Link to="/products?category=teapots" className="footer__menu-link">Чайники</Link></li>
                     <li className="footer__menu-item">
-                        <a href="#" className="footer__menu-link">Турки</a></li>
+                        <Link to="/products?category=cezves" className="footer__menu-link">Турки</Link></li>
                     <li className="footer__menu-item">
-                        <a href="#" className="footer__menu-link">Прочее</a></li>
+                        <Link to="/products?category=other" className="footer__menu-link">Прочее</Link></li>
                 </ul>
             </div>
 
@@ -37,7 +39,7 @@ export const Footer = () => (
                 <a href="mailto:astrofizik51@yandex.ru" className="footer__email">AstroFizik51@yandex.ru</a>
                 <ul className="footer__social">
                     <li className="footer__social-item">
-                        <a href="" className="footer__social-link">
+                        <a href="https://t.me/AstroKettle" className="footer__social-link">
                             <img src="image/TG.svg" alt="Телега" className="socials__logo" />
                         </a></li>
                     <li className="footer__social-item">
@@ -45,7 +47,7 @@ export const Footer = () => (
                             <img src="image/YT.svg" alt="Ютуб" className="socials__logo" />
                         </a></li>
                     <li className="footer__social-item">
-                        <a href="" className="footer__social-link">
+                        <a href="https://vk.com/usipov" className="footer__social-link">
                             <img src="image/VK.svg" alt="ВК" className="socials__logo" />
                         </a></li>
                 </ul>
