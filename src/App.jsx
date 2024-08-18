@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import { Footer } from "./modules/Footer";
-import { Header } from "./modules/header";
-import { Main } from "./modules/main";
+import { Header } from "./modules/Header";
+import { Main } from "./modules/Main";
 
 
 function App() {
