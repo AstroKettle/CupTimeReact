@@ -1156,4 +1156,9 @@ input[type="number"] {
     top: 5px;
     right: 5px;
   }
+
+  .order__form {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
