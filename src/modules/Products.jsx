@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import { Product } from "./product";
+import { Product } from "./Product";
 import { useProducts } from "../context/ProductContext";
 import { useSearchParams } from "react-router-dom";
 import { SkeletonLoader } from "./SkeletonLoader";
